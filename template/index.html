@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+            height: 800px;
+            width: 550px;
+            border:blueviolet solid 5px;
+            padding-left: 25px;
+            padding-bottom: 15px;
+            padding-right: 25px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>FORM FOR LOAN STATUS</h1><hr>
+    <form action="/">
+        <label for="gender">Gender : </label><br>
+        <input type="radio" name="gender" value="1">Male<br>
+        <input type="radio" name="gender" value="0">Female<br><br>
+        <label for="married">Married : </label><br>
+        <input type="radio" name="married" value="1">YES<br>
+        <input type="radio" name="married" value="0">NO<br><br>
+        <label for="dependents">Dependents :</label>
+        <input type="number" name="dependents" max="5"><br><br>
+        <label for="education">Education : </label><br>
+        <input type="radio" name="education" value="1">Graduated<br>
+        <input type="radio" name="education" value="0">NOT Graduated<br><br>
+        <label for="radio">Self Employed : </label><br>
+        <input type="radio" name="employed" value="1">YES<br>
+        <input type="radio" name="employed" value="0">NO<br><br>
+        <label for="applicant_income">Applicant Income : </label>
+        <input type="number" name="applicant_income"><br><br>
+        <label for="coapplicant_income">Co-Applicant Income : </label>
+        <input type="number" name="coapplicant_income" step="1"><br><br>
+        <label for="loan_amount">Loan Amount : </label>
+        <input type="number" name="loan_amount" step="1"><br><br>
+        <label for="loan_amount_term">Loan Amount Term : </label>
+        <input type="number" name="loan_amount_term" step="1"><br><br>
+        <label for="credit">Credit History</label><br>
+        <input type="radio" name="credit" value="1">YES<br>
+        <input type="radio" name="credit" value="0">NO<br><br>
+        <label for="p_area">Property Area : </label><br>
+        <input type="radio" name="p_area" value="1">Urban<br>
+        <input type="radio" name="p_area" value="0">Rural<br><br>
+        <input type="submit" name="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
