@@ -19,7 +19,7 @@
 </head>
 <body class="container">
     <h1>FORM FOR LOAN STATUS</h1><hr>
-    <form action="/">
+    <form action="/" method="post">
         <label for="gender">Gender : </label><br>
         <input type="radio" name="gender" value="1">Male<br>
         <input type="radio" name="gender" value="0">Female<br><br>
@@ -46,9 +46,18 @@
         <input type="radio" name="credit" value="1">YES<br>
         <input type="radio" name="credit" value="0">NO<br><br>
         <label for="p_area">Property Area : </label><br>
-        <input type="radio" name="p_area" value="1">Urban<br>
-        <input type="radio" name="p_area" value="0">Rural<br><br>
+        <input type="radio" name="p_area" value="0">Rural<br>
+        <input type="radio" name="p_area" value="1">Semiurban<br>
+        <input type="radio" name="p_area" value="2">Urban<br><br>
         <input type="submit" name="submit" value="SUBMIT">
     </form>
+    <div>
+        {% if loan_status=="1": %}
+            <h3 style="color:rgb(3, 204, 3)">Congratulations!! Your loan has been passed !!<h3>
+        {% endif %}
+        {% if loan_status=="0": %}
+            <h3 style="color:rgb(212, 49, 49)">Sorry!! Your Loan has not ben approved !!</h3>
+        {% endif %}
+    </div>
 </body>
 </html>
